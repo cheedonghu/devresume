@@ -97,6 +97,30 @@
         }
       }
     },
+    "responsibilitiesAndAchievements": {
+      "type": "array",
+      "description": "Core responsibilities and achievements grouped by topic.",
+      "additionalItems": false,
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "e.g. Reconciliation system refactor and decoupling"
+          },
+          "highlights": {
+            "type": "array",
+            "description": "Detailed responsibilities and achievements under this topic",
+            "additionalItems": false,
+            "items": {
+              "type": "string",
+              "description": "e.g. Introduced dependency inversion to decouple complex reconciliation logic"
+            }
+          }
+        }
+      }
+    },
     "work": {
       "type": "array",
       "additionalItems": false,

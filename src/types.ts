@@ -31,6 +31,11 @@ export type Skill = {
   keywords?: Array<string>;
 };
 
+export type ResponsibilityAchievement = {
+  title?: string;
+  highlights?: Array<string | null>;
+};
+
 export type Project = {
   name?: string;
   description?: string;
@@ -89,6 +94,7 @@ export type Meta = {
 
 export type Resume = {
   basics?: Basics;
+  responsibilitiesAndAchievements?: Array<ResponsibilityAchievement | null>;
   work?: Array<Job | null>;
   skills?: Array<Skill | null>;
   projects?: Array<Project | null>;

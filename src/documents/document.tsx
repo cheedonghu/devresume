@@ -8,6 +8,7 @@ import {
   EducationSection,
   ProjectsSection,
   PublicationsSection,
+  ResponsibilitiesAndAchievementsSection,
   SkillsSection,
   VolunteerSection,
   WorkSection,
@@ -37,6 +38,7 @@ function createStyles(theme: Theme) {
 export function ResumeDocument({ resume }: Props) {
   const {
     basics,
+    responsibilitiesAndAchievements,
     work,
     skills,
     projects,
@@ -69,6 +71,13 @@ export function ResumeDocument({ resume }: Props) {
           {work && Array.isArray(work) && (
             <WorkSection theme={theme} work={work} />
           )}
+          {responsibilitiesAndAchievements &&
+            Array.isArray(responsibilitiesAndAchievements) && (
+              <ResponsibilitiesAndAchievementsSection
+                theme={theme}
+                items={responsibilitiesAndAchievements}
+              />
+            )}
 
           {projects && Array.isArray(projects) && (
             <ProjectsSection theme={theme} projects={projects} />

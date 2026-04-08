@@ -1,4 +1,5 @@
 export * from "./basics-section";
+export * from "./responsibilities-and-achievements-section";
 export * from "./work-section";
 export * from "./education-section";
 export * from "./skills-section";

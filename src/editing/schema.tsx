@@ -17,6 +17,11 @@ function createHighlightedElements() {
   highligher.pop();
   highligher.pop();
 
+  highligher.pushArrayOfObjects("responsibilitiesAndAchievements");
+  highligher.addStringField("title", { markdown: true });
+  highligher.addArrayOfStringsField("highlights", { markdown: true });
+  highligher.pop();
+
   highligher.pushArrayOfObjects("work");
   highligher.addStringField("name");
   highligher.addStringField("location");
@@ -33,7 +38,7 @@ function createHighlightedElements() {
   highligher.addArrayOfStringsField("keywords");
   highligher.pop();
 
-  highligher.pushArrayOfObjects("work");
+  highligher.pushArrayOfObjects("projects");
   highligher.addStringField("name");
   highligher.addStringField("description", { markdown: true });
   highligher.addStringField("url");
