@@ -22,6 +22,11 @@ function createHighlightedElements() {
   highligher.addArrayOfStringsField("highlights", { markdown: true });
   highligher.pop();
 
+  highligher.pushArrayOfObjects("others");
+  highligher.addStringField("title", { markdown: true });
+  highligher.addArrayOfStringsField("highlights", { markdown: true });
+  highligher.pop();
+
   highligher.pushArrayOfObjects("work");
   highligher.addStringField("name");
   highligher.addStringField("location");

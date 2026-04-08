@@ -6,6 +6,7 @@ import {
   AwardsSection,
   CertificatesSection,
   EducationSection,
+  OthersSection,
   ProjectsSection,
   PublicationsSection,
   ResponsibilitiesAndAchievementsSection,
@@ -39,6 +40,7 @@ export function ResumeDocument({ resume }: Props) {
   const {
     basics,
     responsibilitiesAndAchievements,
+    others,
     work,
     skills,
     projects,
@@ -78,7 +80,6 @@ export function ResumeDocument({ resume }: Props) {
                 items={responsibilitiesAndAchievements}
               />
             )}
-
           {projects && Array.isArray(projects) && (
             <ProjectsSection theme={theme} projects={projects} />
           )}
@@ -101,6 +102,9 @@ export function ResumeDocument({ resume }: Props) {
 
           {volunteer && Array.isArray(volunteer) && (
             <VolunteerSection theme={theme} volunteer={volunteer} />
+          )}
+          {others && Array.isArray(others) && (
+            <OthersSection theme={theme} items={others} />
           )}
         </VStack>
       </Page>

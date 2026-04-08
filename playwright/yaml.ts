@@ -45,6 +45,19 @@ work:
       - Highlight 2.2 that takes more space to test what happens with the resume in this case. Some more text to force new lines in the pdf.
 `;
 
+export const responsibilitiesAndAchievementsYAML = `
+responsibilitiesAndAchievements:
+  - title: "**Reconciliation Refactor & Decoupling**"
+    highlights:
+      - Introduced dependency inversion to decouple the complex N:N reconciliation flow and improve extensibility.
+      - Split notifications, settlement, recharge and invoicing into separate event-driven flows with RabbitMQ.
+
+  - title: "**Delivery Efficiency Improvements**"
+    highlights:
+      - Standardized collaboration flows to reduce repeated communication and improve execution efficiency.
+      - Added observability and guardrails to shorten production issue diagnosis time.
+`;
+
 export const volunteerYAML = `
 volunteer:
   - organization: Organization1
@@ -145,4 +158,17 @@ projects:
     highlights:
       - Highlight 2.1 **highlight bold** *highlight italic* [hightlight link](https://link.test.com).
       - Highlight 2.2 that takes more space to test what happens with the resume in this case. Some more text to force new lines in the pdf.
+`;
+
+export const othersYAML = `
+others:
+  - title: "**AI Ops Assistant Rollout**"
+    highlights:
+      - Connected alerts, knowledge base and work orders to improve collaboration efficiency.
+      - Used LLM-generated triage suggestions to reduce first-response time.
+
+  - title: "**Engineering Enablement**"
+    highlights:
+      - Built reusable onboarding materials and templates for faster team ramp-up.
+      - Consolidated recurring operational tasks into clearer internal workflows.
 `;

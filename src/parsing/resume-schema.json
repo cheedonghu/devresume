@@ -121,6 +121,30 @@
         }
       }
     },
+    "others": {
+      "type": "array",
+      "description": "Other grouped information.",
+      "additionalItems": false,
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "e.g. AI Ops assistant rollout"
+          },
+          "highlights": {
+            "type": "array",
+            "description": "Detailed notes under this topic",
+            "additionalItems": false,
+            "items": {
+              "type": "string",
+              "description": "e.g. Connected alerts, knowledge base and workflows to reduce response time"
+            }
+          }
+        }
+      }
+    },
     "work": {
       "type": "array",
       "additionalItems": false,

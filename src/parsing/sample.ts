@@ -22,6 +22,12 @@ responsibilitiesAndAchievements:
       - 推动关键链路监控与告警治理，缩短线上问题定位时间，提升系统稳定性
       - 梳理研发协作流程，减少重复沟通成本，提升需求交付效率
 
+others:
+  - title: "**AI 运维助手落地**"
+    highlights:
+      - 打通告警、知识库与工单流转，提升问题定位与协作效率
+      - 结合大模型能力生成初步分析建议，缩短一线响应时间
+
 work:
   - name: FLAG 公司
     position: 软件工程师

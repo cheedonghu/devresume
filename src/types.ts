@@ -95,6 +95,7 @@ export type Meta = {
 export type Resume = {
   basics?: Basics;
   responsibilitiesAndAchievements?: Array<ResponsibilityAchievement | null>;
+  others?: Array<ResponsibilityAchievement | null>;
   work?: Array<Job | null>;
   skills?: Array<Skill | null>;
   projects?: Array<Project | null>;

@@ -7,19 +7,26 @@ import {
   educationYAML,
   awardsYAML,
   publicationsYAML,
+  responsibilitiesAndAchievementsYAML,
   skillsYAML,
   projectsYAML,
+  othersYAML,
 } from "./yaml";
 
 const tests = [
   { section: "basics", yaml: basicsYAML },
   { section: "work", yaml: workYAML },
+  {
+    section: "responsibilities-and-achievements",
+    yaml: responsibilitiesAndAchievementsYAML,
+  },
   { section: "volunteer", yaml: volunteerYAML },
   { section: "education", yaml: educationYAML },
   { section: "awards", yaml: awardsYAML },
   { section: "publications", yaml: publicationsYAML },
   { section: "skills", yaml: skillsYAML },
   { section: "projects", yaml: projectsYAML },
+  { section: "others", yaml: othersYAML },
 ];
 
 for (const { section, yaml } of tests) {

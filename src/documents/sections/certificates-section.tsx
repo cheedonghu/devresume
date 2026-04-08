@@ -3,6 +3,7 @@ import { Text } from "@react-pdf/renderer";
 import { EventItem, EventsSection } from "../events-section";
 import { ReactElement } from "react";
 import { Theme } from "../theme";
+import { useTranslation } from "react-i18next";
 
 export type CertificateItemProps = {
   certificate: Certificate;
@@ -35,8 +36,13 @@ type SectionProps = {
 };
 
 export function CertificatesSection({ theme, certificates }: SectionProps) {
+  const { t } = useTranslation();
+
   return (
-    <EventsSection theme={theme} title="Certificates">
+    <EventsSection
+      theme={theme}
+      title={t("certificates", { defaultValue: "Certificates" })}
+    >
       {certificates.map(
         (certificate, index) =>
           certificate && (
