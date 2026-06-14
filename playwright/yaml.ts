@@ -18,6 +18,19 @@ basics:
       url: linkedin.com/test
 `;
 
+export const personalAdvantagesYAML = `
+personalAdvantages:
+  - title: "**Reconciliation Refactor & Decoupling**"
+    highlights:
+      - Introduced dependency inversion to decouple the complex N:N reconciliation flow and improve extensibility.
+      - Split notifications, settlement, recharge and invoicing into separate event-driven flows with RabbitMQ.
+
+  - title: "**Delivery Efficiency Improvements**"
+    highlights:
+      - Standardized collaboration flows to reduce repeated communication and improve execution efficiency.
+      - Added observability and guardrails to shorten production issue diagnosis time.
+`;
+
 export const workYAML = `
 work:
   - name: Work1

@@ -1,4 +1,5 @@
 export * from "./basics-section";
+export * from "./personal-advantages-section";
 export * from "./responsibilities-and-achievements-section";
 export * from "./others-section";
 export * from "./work-section";

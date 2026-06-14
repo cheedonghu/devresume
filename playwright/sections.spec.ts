@@ -8,6 +8,7 @@ import {
   awardsYAML,
   publicationsYAML,
   responsibilitiesAndAchievementsYAML,
+  personalAdvantagesYAML,
   skillsYAML,
   projectsYAML,
   othersYAML,
@@ -15,6 +16,10 @@ import {
 
 const tests = [
   { section: "basics", yaml: basicsYAML },
+  {
+    section: "personal-advantages",
+    yaml: personalAdvantagesYAML,
+  },
   { section: "work", yaml: workYAML },
   {
     section: "responsibilities-and-achievements",

@@ -29,6 +29,8 @@ i18n
           publications: "Publications",
           responsibilitiesAndAchievements:
             "Core Responsibilities & Achievements",
+          personalAdvantages:
+            "Personal Advantages",
           save: "Save",
           open: "Open",
           new: "New",
@@ -61,6 +63,7 @@ i18n
           awards: "荣誉",
           publications: "发表",
           responsibilitiesAndAchievements: "核心职责与成果",
+          personalAdvantages: "个人优势",
           save: "保存",
           open: "打开",
           new: "新建",

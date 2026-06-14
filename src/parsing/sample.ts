@@ -12,6 +12,12 @@ basics:
     - network: github
       url: https://github.com/yourname
 
+personalAdvantages:
+  - title: "**熟练掌握linux部署运维**"
+    highlights:
+      - Debain,Centos都熟悉
+  - title: "有五年金融领域经验"
+
 responsibilitiesAndAchievements:
   - title: "**对账系统重构与解耦**"
     highlights:

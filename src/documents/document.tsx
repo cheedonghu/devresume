@@ -10,6 +10,7 @@ import {
   ProjectsSection,
   PublicationsSection,
   ResponsibilitiesAndAchievementsSection,
+  PersonalAdvantagesSection,
   SkillsSection,
   VolunteerSection,
   WorkSection,
@@ -39,6 +40,7 @@ function createStyles(theme: Theme) {
 export function ResumeDocument({ resume }: Props) {
   const {
     basics,
+    personalAdvantages,
     responsibilitiesAndAchievements,
     others,
     work,
@@ -67,6 +69,13 @@ export function ResumeDocument({ resume }: Props) {
         <Bar theme={theme} />
         <VStack gap={theme.space[10]}>
           {basics && <BasicsSection theme={theme} basics={basics} />}
+          {personalAdvantages &&
+            Array.isArray(personalAdvantages) && (
+              <PersonalAdvantagesSection
+                theme={theme}
+                items={personalAdvantages}
+              />
+            )}
           {skills && Array.isArray(skills) && (
             <SkillsSection theme={theme} skills={skills} />
           )}

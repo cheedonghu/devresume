@@ -8,6 +8,7 @@ function createHighlightedElements() {
   highligher.pushType("Resume");
 
   highligher.pushObject("basics");
+  highligher.pushArrayOfObjects("personalAdvantages");
   highligher.addStringField("name");
   highligher.addStringField("label");
   highligher.addStringField("email");

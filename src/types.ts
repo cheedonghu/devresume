@@ -36,6 +36,11 @@ export type ResponsibilityAchievement = {
   highlights?: Array<string | null>;
 };
 
+export type PersonalAdvantage = {
+  title?: string;
+  highlights?: Array<string | null>;
+};
+
 export type Project = {
   name?: string;
   description?: string;
@@ -95,6 +100,7 @@ export type Meta = {
 export type Resume = {
   basics?: Basics;
   responsibilitiesAndAchievements?: Array<ResponsibilityAchievement | null>;
+  personalAdvantages?: Array<PersonalAdvantage | null>;
   others?: Array<ResponsibilityAchievement | null>;
   work?: Array<Job | null>;
   skills?: Array<Skill | null>;
